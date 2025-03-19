@@ -16,5 +16,5 @@ COPY . .
 # Mở cổng cho server
 EXPOSE 4000
 
-# Chạy ứng dụng (nếu dùng Nodemon thì sửa lại)
-CMD ["npm", "run", "dev"]
+# Chạy ứng dụng (nếu dùn thì sửa lại)
+CMD ["npm", "run", "start"]
