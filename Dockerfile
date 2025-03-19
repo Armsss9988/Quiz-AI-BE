@@ -15,6 +15,5 @@ COPY . .
 
 # Mở cổng cho server
 EXPOSE 4000
-RUN npm run build
 # Chạy ứng dụng (nếu dùn thì sửa lại)
 CMD ["npm", "start"]
