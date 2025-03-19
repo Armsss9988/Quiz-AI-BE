@@ -1,0 +1,15 @@
+services:
+  backend:
+    build: .
+    container_name: node-backend
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=${SUPABASE_URL}
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: ["npm", "run", "dev"]
